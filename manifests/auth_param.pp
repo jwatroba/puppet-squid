@@ -1,6 +1,7 @@
 define squid::auth_param (
   Enum['basic', 'digest']
           $scheme,
+          $test,
   Array   $entries,
   String  $auth_param_name = $title,
   String  $order           = '40',
